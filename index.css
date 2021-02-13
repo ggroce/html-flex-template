@@ -43,7 +43,8 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: var(--footer-height);
-	background-color: #828432;
+	background-color: black;
+  color: antiquewhite;
 	overflow: auto;
 }
 
