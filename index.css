@@ -1,6 +1,7 @@
 :root {
 	--header-height: 50px;
 	--footer-height: 100px;
+  --sidebar-width: 150px;
 	--content-spacer: 10px;
 }
 
@@ -11,7 +12,7 @@ html, body {
 	height: 100%;
 	display: block;
 	position: relative;
-	background-color: #FED342;
+	background-color: #322F1D;
 	overflow: hidden;
 }
 
@@ -19,12 +20,12 @@ html, body {
 	margin-top: var(--header-height);
 	height: 100%;
 	width: 100%;
-	background-color: #AC4243;
+	background-color: #BADDDA;
 	overflow: auto;
 }
 
 main {
-	padding-left: var(--content-spacer);
+	padding-left: calc(var(--sidebar-width) + var(--content-spacer));
 	padding-top: var(--content-spacer);
 	padding-bottom: calc(var(--footer-height) + var(--header-height) + var(--content-spacer));
 }
@@ -33,8 +34,9 @@ header {
 	top: 0;
 	height: var(--header-height);
 	width: 100%;
+  margin-left: var(--sidebar-width);
 	position: fixed;
-	background-color: #FB3243;
+	background-color: #B0AB99;
 	overflow: auto;
 }
 
@@ -42,10 +44,21 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+  padding-left: calc(var(--sidebar-width) + var(--content-spacer));
 	height: var(--footer-height);
-	background-color: black;
-  color: antiquewhite;
+	background-color: #4A4737;
+  color: #F9F3DB;
 	overflow: auto;
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  background-color: #B0AB99;
+  z-index: 10;
 }
 
 .child_container {
@@ -53,8 +66,11 @@ footer {
 	min-width: 400px;
 	border-width: 1px;
 	border-style: solid;
+  border-radius: 5px;
 	border-color: #000000;
-	background-color: #763123;
+	background-color: #F9F3DB;
+  margin: 5px;
+  padding-left: var(--content-spacer);
 }
 
 .flex_container {
@@ -76,12 +92,24 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    header {
-        font-size: 0.9em;
-        padding: 0;
-    }
-
-    .child_container {
-	    min-height: 50px;
-    }
+  header {
+      font-size: 0.9em;
+      padding-left: var(--content-spacer);
+      margin-left: 0px;
+      /* show menu for sidebar here */
+  }
+  main {
+    padding-left: var(--content-spacer);
+  }
+  footer {
+    font-size: 0.9em;
+    padding-left: var(--content-spacer);
+    margin-left: 0px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .child_container {
+    min-height: 50px;
+  }
 }
