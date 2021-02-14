@@ -49,7 +49,9 @@ header li {
 }
 
 .push_right {
-  margin-left: calc(100vw - 500px);
+  /* margin-left: calc(100vw - 500px); */
+  position: absolute;
+  right: calc(var(--sidebar-width) + var(--content-spacer) + var(--content-spacer));
 }
 
 footer {
