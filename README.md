@@ -1,2 +1,2 @@
 # html-flex-template
-Template for flex main with header and footer and relevant CSS
+Barebones HTML/CSS template containing a header/sidebar/footer with flex in the main.  Basic responsiveness included.  
