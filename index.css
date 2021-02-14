@@ -13,18 +13,20 @@ html, body {
 	display: block;
 	position: relative;
 	background-color: #322F1D;
+  font-size: 1em;
 	overflow: hidden;
 }
 
 #parent {
-	margin-top: var(--header-height);
 	height: 100%;
 	width: 100%;
 	background-color: #BADDDA;
-	overflow: auto;
+  overflow-x: hidden;
+	overflow-y: auto;
 }
 
 main {
+  margin-top: var(--header-height);
 	padding-left: var(--content-spacer);
   margin-left: var(--sidebar-width);
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -63,7 +65,7 @@ footer {
   padding-left: var(--content-spacer);
 	background-color: #4A4737;
   color: #F9F3DB;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .sidebar {
@@ -112,12 +114,11 @@ footer {
   align-items: center;;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 1000px) {
   header {
       font-size: 0.9em;
       padding-left: var(--content-spacer);
       margin-left: 0px;
-      /* show menu for sidebar here */
   }
   main {
     margin-left: 0;
