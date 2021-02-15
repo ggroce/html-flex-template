@@ -75,6 +75,7 @@ footer {
   padding-left: var(--content-spacer);
   background-color: #4A4737;
   color: #F9F3DB;
+  font-size: 1.5em;
   overflow: hidden;
 }
 
@@ -165,5 +166,11 @@ footer {
   }
   .child_container {
     min-height: 50px;
+  }
+}
+
+@media all and (max-width: 1040px) {
+  header {
+    
   }
 }
