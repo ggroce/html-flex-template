@@ -1,51 +1,51 @@
 :root {
-	--header-height: 50px;
-	--footer-height: 100px;
+  --header-height: 50px;
+  --footer-height: 100px;
   --sidebar-width: 150px;
-	--content-spacer: 10px;
+  --content-spacer: 10px;
 }
 
 html, body {
-	margin: auto 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: relative;
-	background-color: #322F1D;
-  font-size: 1em;
+  margin: auto 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-color: #322F1D;
+  font-size: 1.1em;
   font-family: 'Benne', serif;
   scroll-behavior: smooth;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 #parent {
-	height: 100%;
-	width: 100%;
-	background-color: #BADDDA;
+  height: 100%;
+  width: 100%;
+  background-color: #BADDDA;
   overflow-x: hidden;
-	overflow-y: auto;
+  overflow-y: auto;
 }
 
 main {
   margin-top: var(--header-height);
-	padding-left: var(--content-spacer);
+  padding-left: var(--content-spacer);
   margin-left: var(--sidebar-width);
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 header {
   position: fixed;
-	top: 0;
-	height: var(--header-height);
-	width: 100%;
+  top: 0;
+  height: var(--header-height);
+  width: 100%;
   margin-left: var(--sidebar-width);
   padding-left: var(--content-spacer);
   border: #4A4737;
   border-width: 1px;
   border-style: dashed;
-	background-color: #B0AB99;
-	overflow: hidden;
+  background-color: #B0AB99;
+  overflow: hidden;
   z-index: 5;
 }
 
@@ -67,15 +67,15 @@ header li {
 }
 
 footer {
-	position: relative;
-	bottom: 0;
+  position: relative;
+  bottom: 0;
   height: var(--footer-height);
-	width: 100%;
+  width: 100%;
   margin-left: var(--sidebar-width);
   padding-left: var(--content-spacer);
-	background-color: #4A4737;
+  background-color: #4A4737;
   color: #F9F3DB;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -105,13 +105,13 @@ footer {
 }
 
 .child_container {
-	min-height: 100px;
-	min-width: 400px;
-	border-width: 1px;
-	border-style: solid;
+  min-height: 100px;
+  min-width: 400px;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 5px;
-	border-color: #000000;
-	background-color: #F9F3DB;
+  border-color: #000000;
+  background-color: #F9F3DB;
   font-size: 1.1em;
   margin: 5px;
   padding-left: var(--content-spacer);
@@ -119,22 +119,22 @@ footer {
 }
 
 .flex_container {
-	display: flex;
+  display: flex;
 }
 
 .flex_row {
-	flex-direction: row;
-	flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex_column {
-	flex-direction: column;
-	flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex_center {
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex_center_vertical {
@@ -148,9 +148,9 @@ footer {
 
 @media all and (max-width: 800px) {
   header {
-      font-size: 1.2em;
-      padding-left: var(--content-spacer);
-      margin-left: 0px;
+    font-size: 1.2em;
+    padding-left: var(--content-spacer);
+    margin-left: 0px;
   }
   main {
     margin-left: 0;
