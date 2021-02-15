@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Flex Practice</title>
-	<link rel="stylesheet" type="text/css" href="./index.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Benne&display=swap" rel="stylesheet">
-</head>
-	<body>
-		<div id="parent">
-
-			<header class="drop-shadow">
-          <ul class="flex_container">
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-            <li class ="push_right">Link4</li>
-          </ul>
-			</header>
+  <head>
+    <title>Flex Practice</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet&family=Benne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="parent">
+      <header class="drop-shadow">
+        <div class="header-nav-wrapper">
+          <div class="header-desktop">
+            <ul class="flex_container margin-zero">
+              <li>Link1</li>
+              <li>Link2</li>
+              <li>Link3</li>
+              <li class="push_right">Link4</li>
+            </ul>
+          </div>
+          <div class="header-mobile">
+            <ul class="flex_container margin-zero">
+              <li>Link1</li>
+              <li>Link2</li>
+              <li>Link3</li>
+              <li>Link4</li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
       <div class="sidebar drop-shadow">
         <div class="flex_container flex_column flex_center">
-          <div id="sidebar_logo">Logo here.</div>
-          <p>sidebar stuff.</p>
-          <p>sidebar stuff.</p>
-          <p>sidebar stuff.</p>
+          <div class="sidebar-desktop">
+            <div id="sidebar-logo-large">Large logo.</div>
+            <p>sidebar stuff.</p>
+            <p>sidebar stuff.</p>
+            <p>sidebar stuff.</p>
+          </div>
+          <div class="sidebar-mobile">
+            <div id="sidebar-logo-small">Small logo.</div>
+            <p>sdbr</p>
+            <p>sdbr</p>
+            <p>sdbr</p>
+          </div>
         </div>
       </div>
 
-			<main> 
-				<p>parent div</p>
+      <main>
+        <div class="flex_container flex_row flex_center">
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 1</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 2</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 3</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 4</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 1</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 2</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 3</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 4</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 1</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 2</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 3</p>
+          </div>
+          <div class="child_container">
+            <div class="div_spacer"></div>
+            <p>child div container 4</p>
+          </div>
+        </div>
+      </main>
 
-				<div class="flex_container flex_row flex_center">
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 1</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 2</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 3</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 4</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 1</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 2</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 3</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 4</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 1</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 2</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 3</p>
-					</div>
-					<div class="child_container">
-						<div class="div_spacer"></div>
-						<p>child div container 4</p>
-					</div>
-				</div>
-
-			</main>
-
-			<footer> 
-				footer. 
-			</footer>
-
-		</div>
-	</body>
+      <footer>footer.</footer>
+    </div>
+  </body>
 </html>
