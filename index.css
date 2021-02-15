@@ -14,6 +14,8 @@ html, body {
 	position: relative;
 	background-color: #322F1D;
   font-size: 1em;
+  font-family: 'Benne', serif;
+  scroll-behavior: smooth;
 	overflow: hidden;
 }
 
@@ -39,8 +41,16 @@ header {
 	width: 100%;
   margin-left: var(--sidebar-width);
   padding-left: var(--content-spacer);
+  border: #4A4737;
+  border-width: 1px;
+  border-style: dashed;
 	background-color: #B0AB99;
 	overflow: hidden;
+  z-index: 5;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header li {
@@ -74,9 +84,24 @@ footer {
   left: 0;
   height: 100vh;
   width: var(--sidebar-width);
+  border: #4A4737;
+  border-width: 1px;
+  border-style: dashed;
   background-color: #B0AB99;
   z-index: 10;
   overflow-y: auto;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+#sidebar_logo {
+  height: 100px; 
+  margin-top: var(--content-spacer);
+  font-family: 'Ballet', cursive;
+  font-size: 2em;
+  transition: all 1s ease;
 }
 
 .child_container {
@@ -87,8 +112,10 @@ footer {
   border-radius: 5px;
 	border-color: #000000;
 	background-color: #F9F3DB;
+  font-size: 1.1em;
   margin: 5px;
   padding-left: var(--content-spacer);
+  filter: drop-shadow(3px 1px 3px #636161);
 }
 
 .flex_container {
@@ -111,12 +138,17 @@ footer {
 }
 
 .flex_center_vertical {
-  align-items: center;;
+  align-items: center;
 }
 
-@media all and (max-width: 1000px) {
+.drop-shadow {
+  /* for transparent images */
+  filter: drop-shadow(3px 6px 9px #636161);
+}
+
+@media all and (max-width: 800px) {
   header {
-      font-size: 0.9em;
+      font-size: 1.2em;
       padding-left: var(--content-spacer);
       margin-left: 0px;
   }
@@ -124,7 +156,7 @@ footer {
     margin-left: 0;
   }
   footer {
-    font-size: 0.9em;
+    font-size: 1.2em;
     padding-left: var(--content-spacer);
     margin-left: 0px;
   }
