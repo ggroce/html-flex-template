@@ -1,8 +1,8 @@
 :root {
   font-size: calc(20px + 6 * ((100vw - 320px) / 680));
-  --header-height: 6rem;
-  --footer-height: 6rem;
-  --content-spacer: .6rem;
+  --header-height: 4em;
+  --footer-height: 6em;
+  --content-spacer: .6em;
 }
 
 html, body {
