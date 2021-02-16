@@ -61,6 +61,7 @@ header {
   background-color: #B0AB99;
   overflow: hidden;
   z-index: 5;
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
 }
 
 .header-desktop {
