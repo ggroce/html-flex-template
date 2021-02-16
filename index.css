@@ -27,7 +27,7 @@ html, body {
   font-size: calc(1em + 1vw)
   font-size: calc(20px + 6 * ((100vw - 320px) / 680));
 */
-  font-size: calc(1em + 3vw);
+  font-size: calc(5em + 5vw);
 }
 
 #parent {
@@ -74,7 +74,6 @@ header {
   align-items: center;
   margin: 0;
   height: 100%;
-  font-size: calc(10em + 20vw);
 }
 
 header li {
