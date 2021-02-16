@@ -1,4 +1,5 @@
 :root {
+  font-size: calc(1em + 1vw);
   --header-height: 4em;
   --footer-height: 6em;
   --content-spacer: .6em;
@@ -27,7 +28,6 @@ html, body {
   font-size: calc(1em + 1vw)
   font-size: calc(20px + 6 * ((100vw - 320px) / 680));
 */
-  font-size: calc(2em + 2vw);
 }
 
 #parent {
