@@ -1,5 +1,5 @@
 :root {
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
   --header-height: 4.5rem;
   --footer-height: 6rem;
   --content-spacer: .6rem;
