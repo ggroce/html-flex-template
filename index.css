@@ -71,7 +71,6 @@ header {
 .header-nav-wrapper {
   display: flex;
   align-items: center;
-  text-decoration: none;
   margin: 0;
   height: 100%;
 }
