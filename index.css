@@ -1,8 +1,8 @@
 :root {
   font-size: calc(1em + 1vw);
-  --header-height: 4em;
-  --footer-height: 6em;
-  --content-spacer: .6em;
+  --header-height: 3em;
+  --footer-height: 5em;
+  --content-spacer: 2em;
 }
 
 html, body {
@@ -28,7 +28,6 @@ html, body {
   font-size: calc(1em + 1vw)
   font-size: calc(20px + 6 * ((100vw - 320px) / 680));
 */
-  font-size: calc(1em + 1vw);
 }
 
 #parent {
@@ -40,10 +39,10 @@ html, body {
 }
 
 main {
-  margin-top: calc(var(--header-height) + (var(--content-spacer) * 3));
-  padding-left: var(--content-spacer);
+  margin-top: calc(var(--header-height) + (var(--content-spacer)));
+  margin-bottom: var(--content-spacer);
   margin-left: 0;
-  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--content-spacer) * 4));
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
@@ -75,12 +74,13 @@ header {
   align-items: center;
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 header li {
   flex-wrap: nowrap;
   list-style-type: none;
-  padding-left: 25px;
+  padding-left: 1.5em;
 }
 
 .push_right {
@@ -122,28 +122,28 @@ footer {
   display: none;
 }
 
-.sidebar-desktop {
+#sidebar-desktop {
   display: none;
 }
 
 #sidebar-logo-large {
-  height: 100px; 
+  height: 4em; 
   margin-top: var(--content-spacer);
   font-family: 'Ballet', cursive;
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: all 3s ease;
 }
 
 #sidebar-logo-small {
-  height: 50px; 
+  height: 3.125em; 
   margin-top: var(--content-spacer);
   font-family: 'Ballet', cursive;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 .child_container {
-  min-height: 50px;
-  min-width: 400px;
+  min-height: 2.5em;
+  min-width: 15em;
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
@@ -195,12 +195,11 @@ footer {
   }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (min-width: 40em) {
   :root {
-    --header-height: 2.5rem;
+    --header-height: 2rem;
     --content-spacer: .5rem;
-    --sidebar-width: 6rem;
-    font-size: 22px;
+    --sidebar-width: 4.5rem;
   }
   header {
     margin-left: var(--sidebar-width);
@@ -214,28 +213,31 @@ footer {
   .sidebar {
     display: block;
   }
-  .sidebar-tablet {
+  #sidebar-tablet {
     display: block;
   }
   main {
+    margin-top: calc(var(--header-height) + (var(--content-spacer) * 3));
     margin-left: var(--sidebar-width);
+    padding-left: var(--content-spacer);
   }
   footer {
     margin-left: var(--sidebar-width);
   }
   .child_container {
-    min-height: 100px;
+    min-height: 4.5em;
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 64em) {
   :root {
-    --sidebar-width: 10rem;
+    font-size: 1.3em;
+    --sidebar-width: 8rem;
   }
-  .sidebar-tablet {
+  #sidebar-tablet {
     display: none;
   }
-  .sidebar-desktop {
+  #sidebar-desktop {
     display: block;
   }
 }
