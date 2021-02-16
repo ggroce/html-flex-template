@@ -1,5 +1,5 @@
 :root {
-  
+  font-size: calc(1em + 1vw);
   --header-height: 4em;
   --footer-height: 6em;
   --content-spacer: .6em;
@@ -79,6 +79,7 @@ header {
 }
 
 header li {
+  font-size: calc(1em + 1vw);
   flex-wrap: nowrap;
   list-style-type: none;
   padding-left: 25px;
@@ -153,6 +154,7 @@ footer {
   margin: 5px;
   padding-left: var(--content-spacer);
   filter: drop-shadow(3px 1px 3px #636161);
+  font-size: calc(1em + 1vw);
 }
 
 .margin-zero {
