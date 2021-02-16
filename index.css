@@ -1,6 +1,6 @@
 :root {
-  font-size: 1.2em;
-  --header-height: 3rem;
+  font-size: 1em;
+  --header-height: 3.5rem;
   --footer-height: 6rem;
   --content-spacer: .6rem;
 }
@@ -13,7 +13,6 @@ html, body {
   display: block;
   position: relative;
   background-color: #322F1D;
-  font-size: 1rem;
   font-family: 'Benne', serif;
   scroll-behavior: smooth;
   overflow: hidden;
@@ -51,7 +50,7 @@ header {
   width: 100%;
   margin-left: 0px;
   padding-left: var(--content-spacer);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: #4A4737;
   border-width: 1px;
   border-style: dashed;
@@ -146,7 +145,7 @@ footer {
   border-radius: 5px;
   border-color: #000000;
   background-color: #F9F3DB;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 5px;
   padding-left: var(--content-spacer);
   filter: drop-shadow(3px 1px 3px #636161);
@@ -192,24 +191,6 @@ footer {
       opacity: 1;
   }
 }
-
-/* @media all and (min-width: 1081px) {
-  :root {
-    --sidebar-width: 10rem;
-  }
-  .header-desktop {
-    display: block;
-  }
-  .sidebar-desktop {
-    display: block;
-  }
-} */
-
-/* @media all and (min-width: 200px) {
-  .header-desktop {
-    display: none;
-  }
-} */
 
 @media all and (min-width: 1080px) {
   :root {
