@@ -1,2 +1,2 @@
 # html-flex-template
-Barebones HTML/CSS template containing a header/sidebar/footer with flex in the main.  Basic responsiveness included.  
+This is a barebones HTML/CSS template, containing a default setup that includes a fixed header, fixed sidebar, and a footer.  The elements are mobile first responsive, with mobile, tablet, and desktop media queries.  
