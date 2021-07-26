@@ -5,23 +5,30 @@
   --content-spacer: 2em;
 }
 
-html, body {
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: auto 0;
   padding: 0;
   width: 100%;
   height: 100%;
   display: block;
   position: relative;
-  background-color: #322F1D;
-  font-family: 'Benne', serif;
+  background-color: #322f1d;
+  font-family: "Benne", serif;
   scroll-behavior: smooth;
   overflow: hidden;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 1s;
-  animation-fill-mode:forwards;
-/*
+  animation-fill-mode: forwards;
+  /*
   font-size-adjust: none;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -33,7 +40,7 @@ html, body {
 #parent {
   height: 100%;
   width: 100%;
-  background-color: #BADDDA;
+  background-color: #baddda;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -42,12 +49,15 @@ main {
   margin-top: calc(var(--header-height) + (var(--content-spacer)));
   margin-bottom: var(--content-spacer);
   margin-left: 0;
-  min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--content-spacer) * 4));
+  min-height: calc(
+    100vh - var(--header-height) - var(--footer-height) -
+      (var(--content-spacer) * 4)
+  );
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 2s;
-  animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
 }
 
 header {
@@ -56,10 +66,10 @@ header {
   height: var(--header-height);
   width: 100%;
   margin-left: 0px;
-  border: #4A4737;
+  border: #4a4737;
   border-width: 1px;
   border-style: dashed;
-  background-color: #B0AB99;
+  background-color: #b0ab99;
   overflow: hidden;
   z-index: 5;
 }
@@ -85,7 +95,9 @@ header li {
 .push_right {
   /* margin-left: calc(100vw - 500px); */
   position: absolute;
-  right: calc(var(--sidebar-width) + var(--content-spacer) + var(--content-spacer));
+  right: calc(
+    var(--sidebar-width) + var(--content-spacer) + var(--content-spacer)
+  );
 }
 
 footer {
@@ -95,8 +107,8 @@ footer {
   width: 100%;
   margin-left: 0px;
   padding-left: var(--content-spacer);
-  background-color: #4A4737;
-  color: #F9F3DB;
+  background-color: #4a4737;
+  color: #f9f3db;
   overflow: hidden;
 }
 
@@ -106,17 +118,17 @@ footer {
   left: 0;
   height: 100vh;
   width: var(--sidebar-width);
-  border: #4A4737;
+  border: #4a4737;
   border-width: 1px;
   border-style: dashed;
-  background-color: #B0AB99;
+  background-color: #b0ab99;
   z-index: 10;
   overflow-y: auto;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 1s;
-  animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
   text-decoration: none;
   display: none;
 }
@@ -126,17 +138,17 @@ footer {
 }
 
 #sidebar-logo-large {
-  height: 4em; 
+  height: 4em;
   margin-top: var(--content-spacer);
-  font-family: 'Ballet', cursive;
+  font-family: "Ballet", cursive;
   font-size: 1.6rem;
   transition: all 3s ease;
 }
 
 #sidebar-logo-small {
-  height: 3.125em; 
+  height: 3.125em;
   margin-top: var(--content-spacer);
-  font-family: 'Ballet', cursive;
+  font-family: "Ballet", cursive;
   transition: all 2s ease;
 }
 
@@ -147,7 +159,7 @@ footer {
   border-style: solid;
   border-radius: 5px;
   border-color: #000000;
-  background-color: #F9F3DB;
+  background-color: #f9f3db;
   margin: 5px;
   padding-left: var(--content-spacer);
   filter: drop-shadow(3px 1px 3px #636161);
@@ -187,17 +199,17 @@ footer {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @media screen and (min-width: 40em) {
   :root {
     --header-height: 2rem;
-    --content-spacer: .5rem;
+    --content-spacer: 0.5rem;
     --sidebar-width: 4.5rem;
   }
   header {
